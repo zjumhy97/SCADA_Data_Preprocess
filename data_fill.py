@@ -25,7 +25,7 @@ scada_data = pd.read_csv('test_data_1.csv',encoding='gbk')
 # print(total_missing / total_cells * 100)
 
 # 填充缺失值，如果都是NaN填充为0
-scada_data.fillna(0).to_csv('test_data_3.csv',encoding='gbk')
+scada_data.fillna(0).to_csv('test_data_3.csv',encoding='gbk',index = False)
 
 # 填充缺失值，将NaN填充为该列下一行的值
 # 这个对我没有多大用，但是可以参考，应该有填充为上一行的值
